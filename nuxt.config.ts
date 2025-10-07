@@ -1,17 +1,23 @@
+import { fileURLToPath } from 'node:url'
+import { dirname, resolve } from 'node:path'
+
+const rootDir = dirname(fileURLToPath(import.meta.url))
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts'],
 
-  // ⚙️ Caminhos CSS (você pode manter ./ ou ~)
+  // ✅ CSS usando alias padrão
   css: ['~/assets/main.css', '~/assets/css/tailwind.css'],
 
+  // ✅ Corrige o alias dinamicamente
   vite: {
     resolve: {
       alias: {
-        '~': '/home/lucas/fenil/fenil-app',
-        '@': '/home/lucas/fenil/fenil-app',
+        '~': rootDir,
+        '@': rootDir,
       },
     },
   },
