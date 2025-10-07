@@ -1,0 +1,96 @@
+
+:root {
+  --fenil-green: #00ff88;
+  --fenil-dark: #0a0a0a;
+  --fenil-gray: #1a1a1a;
+  --fenil-light-gray: #333333;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* background-color: var(--fenil-dark); */
+  background: url('/home/lucas/fenil/fenil-app/assets/images/bg-teste.png') no-repeat center center fixed;
+  color: white;
+}
+
+.fenil-green {
+  color: var(--fenil-green);
+}
+
+.bg-fenil-green {
+  background-color: var(--fenil-green);
+}
+
+.bg-fenil-dark {
+  background-color: var(--fenil-dark);
+}
+
+.bg-fenil-gray {
+  background-color: var(--fenil-gray);
+}
+
+.bg-fenil-light-gray {
+  background-color: var(--fenil-light-gray);
+}
+
+.border-fenil-green {
+  border-color: var(--fenil-green);
+}
+
+.hover-fenil-green:hover {
+  background-color: var(--fenil-green);
+  color: var(--fenil-dark);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--fenil-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fenil-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc6a;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes pulse-green {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
+  }
+}
+
+.pulse-green {
+  animation: pulse-green 2s infinite;
+}
