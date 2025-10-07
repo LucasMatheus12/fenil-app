@@ -1,14 +1,21 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts'],
 
-  // CSS de entrada (use caminho relativo do Nuxt)
-  css: ["/home/lucas/fenil/fenil-app/assets/main.css", "/home/lucas/fenil/fenil-app/assets/css/tailwind.css"],
+  // ⚙️ Caminhos CSS (você pode manter ./ ou ~)
+  css: ['~/assets/main.css', '~/assets/css/tailwind.css'],
 
-  // PostCSS aqui (sem postcss.config.js)
+  vite: {
+    resolve: {
+      alias: {
+        '~': '/home/lucas/fenil/fenil-app',
+        '@': '/home/lucas/fenil/fenil-app',
+      },
+    },
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -16,13 +23,11 @@ export default defineNuxtConfig({
     },
   },
 
-  // @nuxt/fonts
   fonts: {
     families: [
       { name: 'Inter', provider: 'google' },
       { name: 'Lora', provider: 'google', weights: [400, 500, 600, 700], styles: ['normal', 'italic'] },
     ],
-    // opcional: display: 'swap'
   },
 
   app: {
@@ -33,7 +38,6 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Instale um funil com IA em 30 dias. Marketing + CRM + Vendedores IA' },
       ],
-      // use um ícone em /public/favicon.ico ou ajuste o path para algo sob /public
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
