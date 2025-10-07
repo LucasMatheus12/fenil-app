@@ -9,7 +9,7 @@
 body {
   font-family: "Inter", sans-serif;
   /* background-color: var(--fenil-dark); */
-  background: url('/images/bg-teste.png') no-repeat center center fixed;
+  /* background: url('/images/bg-teste.png') no-repeat center center fixed; */
   color: white;
 }
 

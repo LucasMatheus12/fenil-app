@@ -1,5 +1,5 @@
 <template >
-  <div class="min-h-screen text-white relative ">
+  <div class="min-h-screen text-white relative bg-[url('/images/bg-teste.png')] bg-cover bg-center bg-fixed">
     <!-- HEADER -->
 <header class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1280px] z-50">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
