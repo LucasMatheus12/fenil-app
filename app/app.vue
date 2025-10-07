@@ -3,7 +3,7 @@
     <!-- HEADER -->
 <header class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1280px] z-50">
   <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-    <img src="/home/lucas/fenil/fenil-app/assets/images/logo.png" alt="Logo" class="h-10 w-auto">
+    <img src="/assets/images/logo.png" alt="Logo" class="h-10 w-auto">
 
     <!-- NAV DESKTOP -->
     <nav class="hidden md:flex items-center space-x-8 rounded-full py-[21px] px-[32px] !bg-[#20222780]">
@@ -76,7 +76,7 @@
 </aside>
 
 
-    <section id="equipe" class="pt-[200px] pb-16 px-4 text-center relative hero-auto  overflow-hidden bg-[url('/home/lucas/fenil/fenil-app/assets/images/background.png')] bg-cover bg-center">
+    <section id="equipe" class="pt-[200px] pb-16 px-4 text-center relative hero-auto  overflow-hidden bg-[url('/assets/images/background.png')] bg-cover bg-center">
       <div class="container mx-auto">
         <h1 class="lora md:text-[56px] text-[40px] !text-[rgba(242,234,220,1)] font-semibold leading-tight">
           De amador a máquina de vendas:
@@ -110,7 +110,7 @@
                 deixa de ser apenas uma ferramenta e se transforma em uma máquina de vendas e insights.
               </p>
             </div>
-          <img src="/home/lucas/fenil/fenil-app/assets/images/illustra-sistema.png" alt="" class="md:pt-[200px] pt-[300px]">
+          <img src="/assets/images/illustra-sistema.png" alt="" class="md:pt-[200px] pt-[300px]">
         </div>
         </div>
     </section>
@@ -154,8 +154,8 @@
             <!-- <div class="w-full h-32 bg-gray-800 rounded mb-4 flex items-center justify-center">
               <span class="text-gray-500">Interface Preview</span>
             </div> -->
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard1.png" alt="" class="absolute bottom-10 right-0 w-full z-10">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px] ">
+            <img src="/assets/images/imgCard1.png" alt="" class="absolute bottom-10 right-0 w-full z-10">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px] ">
           </div>
           
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
@@ -163,8 +163,8 @@
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Prospecção e qualificação de leads no piloto automático com IA.
             </p>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard2.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[237px] h-[139.7px] z-10">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
+            <img src="/assets/images/imgCard2.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[237px] h-[139.7px] z-10">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
           </div>
           
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
@@ -172,8 +172,8 @@
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Transforme seu CRM no cérebro inteligente da sua máquina de vendas.
             </p>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard3.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[163px] w-[239px]">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
+            <img src="/assets/images/imgCard3.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[163px] w-[239px]">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
           </div>
           
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
@@ -181,8 +181,8 @@
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Projetamos e construímos sua máquina de vendas com a mais avançada tecnologia em automação e IA.
             </p>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard4.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[159px] w-[239px]">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
+            <img src="/assets/images/imgCard4.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[159px] w-[239px]">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
           </div>
           
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
@@ -190,8 +190,8 @@
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Otimize suas campanhas e vendas com o poder da Inteligência Artificial.
             </p>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard5.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[164px] w-full">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
+            <img src="/assets/images/imgCard5.png" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[164px] w-full">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
           </div>
           
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
@@ -199,8 +199,8 @@
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Conectamos sua empresa diretamente aos seus clientes ideais.
             </p>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard6.png" alt="" class="absolute bottom-1 left-1/2 -translate-x-1/2 z-10 h-[167px] w-[230px]">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
+            <img src="/assets/images/imgCard6.png" alt="" class="absolute bottom-1 left-1/2 -translate-x-1/2 z-10 h-[167px] w-[230px]">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
           </div>
         
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
@@ -208,8 +208,8 @@
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Conteúdo e SEO que transformam sua empresa em um ímã de clientes.
             </p>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/imgCard7.png" alt="" class="absolute bottom-0 right-0 w-full z-10">
-            <img src="/home/lucas/fenil/fenil-app/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
+            <img src="/assets/images/imgCard7.png" alt="" class="absolute bottom-0 right-0 w-full z-10">
+            <img src="/assets/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
           </div>
           
           <div class="relative text-black rounded-lg p-6 bg-[rgba(242,234,220,1)] h-[354px]">
@@ -220,11 +220,11 @@
             <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
               FAZER DIAGNÓSTICO ->
             </button>
-            <img src="/home/lucas/fenil/fenil-app/assets/images/circles.png" alt="" class="absolute bottom-0 right-0">
+            <img src="/assets/images/circles.png" alt="" class="absolute bottom-0 right-0">
           </div>
         </div>
       </div>
-      <img src="/home/lucas/fenil/fenil-app/assets/images/maskServicos.png" alt="" class="absolute bottom-0 right-0 w-full -z-[10]">
+      <img src="/assets/images/maskServicos.png" alt="" class="absolute bottom-0 right-0 w-full -z-[10]">
     </section>
 
     <section id="depoimentos" class="md:h-sreen h-auto relative py-20 px-4
@@ -274,7 +274,7 @@
         <!-- Foto fixa -->
         <figure class="rounded-xl overflow-hidden md:basis-[320px] md:shrink-0">
           <img
-            src="/home/lucas/fenil/fenil-app/assets/images/depo1.jpeg"
+            src="/assets/images/depo1.jpeg"
             :alt="`Foto de ${current.name}`"
             class="w-full h-full object-cover rounded-xl"
           />
@@ -316,7 +316,7 @@
   </div>
 </section>
 
-    <section id="contato" class="pb-[250px] pt-[120px] px-4 md:h-sreen h-auto bg-[url('/home/lucas/fenil/fenil-app/assets/images/bg-form.png')] bg-cover bg-center">
+    <section id="contato" class="pb-[250px] pt-[120px] px-4 md:h-sreen h-auto bg-[url('/assets/images/bg-form.png')] bg-cover bg-center">
       <div class="mx-auto max-w-xl rounded-2xl ring-1 ring-white/10 p-[2px]">
   <div class="container mx-auto max-w-xl">
   <div class="relative rounded-2xl bg-[rgba(13,13,14,0.4)] border border-[rgba(242,234,220,0.2)] backdrop-blur-[80px] p-6 md:p-8">
@@ -470,7 +470,7 @@ const people = ref<Person[]>([
     id: 1,
     name: 'Patricia Barizon',
     role: 'especialista em CRM e empreendedora',
-    photo: '/home/lucas/fenil/fenil-app/assets/images/imgCard1.png',
+    photo: '/assets/images/imgCard1.png',
     quote:
       'A Fenil trouxe tranquilidade para o nosso dia a dia. Sem complicação, com processos bem definidos e uma comunicação clara, conseguimos focar no que realmente importa: o nosso serviço. Os resultados têm superado as expectativas.'
   },

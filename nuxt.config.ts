@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts'],
 
   // CSS de entrada (use caminho relativo do Nuxt)
-  css: ["/home/lucas/fenil/fenil-app/assets/main.css", "/home/lucas/fenil/fenil-app/assets/css/tailwind.css"],
+  css: ["/assets/main.css", "/assets/css/tailwind.css"],
 
   // PostCSS aqui (sem postcss.config.js)
   postcss: {
