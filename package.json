@@ -2,7 +2,9 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "engines": { "node": ">=18.20.0 <19 || >=20 <21" },
+  "engines": {
+    "node": ">=18.20.0 <19 || >=20 <21"
+  },
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -13,7 +15,8 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
-    "nuxt": "^4.1.2"
+    "nuxt": "^4.1.2",
+    "swiper": "^12.0.2"
   },
   "devDependencies": {
     "@nuxt/fonts": "^0.11.4",

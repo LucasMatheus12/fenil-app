@@ -76,8 +76,8 @@
 </aside>
 
 
-    <section id="equipe" class="pt-[200px] pb-16 px-4 text-center relative hero-auto  overflow-hidden bg-[url('/images/background.png')] bg-cover bg-center">
-      <div class="container mx-auto">
+    <section id="equipe" class="pt-[200px] pb-16  text-center relative hero-auto  overflow-hidden bg-[url('/images/background.png')] bg-cover bg-center">
+      <div class="container mx-auto px-4" >
         <h1 class="lora md:text-[56px] text-[40px] !text-[rgba(242,234,220,1)] font-semibold leading-tight">
           De amador a máquina de vendas:
         </h1>
@@ -94,6 +94,49 @@
       
         
       </div>
+
+<div
+  id="logosSlider"
+  class="relative mt-14 md:mt-[200px] border-y border-[rgba(242,234,220,0.28)] "
+>
+  <ClientOnly>
+
+    <div class="relative mx-auto w-full  px-4 py-6">
+
+      <div
+        class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-80 z-50
+               bg-gradient-to-r from-[rgba(13,13,14,0.9)] to-transparent"
+      ></div>
+      <div
+        class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-80 z-50
+               bg-gradient-to-l from-[rgba(13,13,14,0.9)] to-transparent"
+      ></div>
+
+      <Swiper
+        :modules="[Autoplay, FreeMode]"
+        :loop="true"
+        :speed="9000"
+        :autoplay="{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }"
+        :freeMode="true"
+        :freeModeMomentum="false"
+        :slides-per-view="'auto'"
+        :space-between="100"
+        :allowTouchMove="false"
+        class="py-2 max-w-[1536px]"
+      >
+        <SwiperSlide v-for="(logo, i) in logosInfinite" :key="i" class="!w-auto">
+          <img
+            :src="logo.src"
+            :alt="logo.alt"
+            class="h-10 md:h-12 opacity-80 hover:opacity-100 transition-opacity"
+          />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  </ClientOnly>
+</div>
+
+
     </section>
     <section class="py-16 px-4 ">
     
@@ -110,7 +153,8 @@
                 deixa de ser apenas uma ferramenta e se transforma em uma máquina de vendas e insights.
               </p>
             </div>
-          <img src="/images/illustra-sistema.png" alt="" class="md:pt-[200px] pt-[300px]">
+          <img src="/images/illustra-sistema.png" alt="" class="md:pt-[200px] pt-[300px] md:block hidden">
+          <img src="/images/illustra-sistema-mobile.png" alt="" class="md:hidden block pt-[200px]">
         </div>
         </div>
     </section>
@@ -206,7 +250,7 @@
           <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
             <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Inbound</h3>
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Conteúdo e SEO que transformam sua empresa em um ímã de clientes.
+              Nosso agente identifica a campanha e faz o atendimento personalizado para o lead
             </p>
             <img src="/images/imgCard7.png" alt="" class="absolute bottom-0 right-0 w-full z-10">
             <img src="/images/maskCard.png" alt="" class="absolute bottom-0 right-0 w-full h-[178px]">
@@ -443,7 +487,10 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, FreeMode } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/free-mode'
 /** ====== CONTROLE DO MENU MOBILE (Vue Bindings) ====== **/
 const isMenuOpen = ref(false)
 const openMenu = () => { isMenuOpen.value = true; document.body.style.overflow = 'hidden' }
@@ -476,6 +523,8 @@ const people = ref<Person[]>([
   },
 ])
 
+
+
 const current = computed(() => people.value.find(p => p.id === activeId.value)!)
 
 // Page meta (Nuxt)
@@ -485,6 +534,31 @@ useHead({
     { name: 'description', content: 'Instale um funil com IA em 30 dias. Marketing + CRM + Vendedores IA' }
   ]
 })
+
+const svg = `<svg width="118" class="h-alto" viewBox="0 0 444 65" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+        <path d="M27.1001 1.09999C14.1001 2.79999 4.40013 10.2 1.30013 20.9C0.200132 24.9 -0.0998686 28.9 0.200132 35.5C1.00013 49.7 5.50013 56.7 17.6001 62.2C21.9001 64.2 24.1001 64.5 35.5001 64.5C45.5001 64.5 49.7001 64.1 53.7001 62.7C60.9001 60.2 68.4001 53.3 70.4001 47.3C72.9001 39.9 73.1001 40 63.1001 40H54.2001L53.0001 43.5C52.4001 45.4 50.6001 48 49.0001 49.4C43.7001 53.8 32.7001 54.6 26.3001 51.2C20.0001 47.8 16.2001 37.3 18.0001 28C19.2001 21.6 20.1001 20 24.4001 16.2C33.0001 8.7 48.8001 12 53.0001 22.1C54.2001 25 54.3001 25 63.2001 25H72.2001L71.5001 21.7C70.5001 16.9 66.4001 10.4 62.5001 7.4C55.6001 2.1 40.1001 -0.600007 27.1001 1.09999Z" fill="#ffffff"></path>
+        <path d="M87.5001 31.6C80.4001 47.8 74.4001 61.8 74.2001 62.6C73.9001 63.8 75.3001 64 82.6001 63.8L91.4001 63.5L93.9001 57.3L96.3001 51H124.8L127.3 57.3L129.8 63.5L138.4 63.8C144.5 64 147 63.7 147 62.9C147 62.2 142.1 50.6 136.1 37.1C130.2 23.6 124.2 10.1 123 7.2L120.8 2H100.5L87.5001 31.6ZM114.1 24.1C115.8 28.2 117.8 33.2 118.5 35.2L119.9 39H101.2L105.8 27.5C108.3 21.2 110.5 16.2 110.7 16.3C110.8 16.5 112.4 20 114.1 24.1Z" fill="#ffffff"></path>
+        <path d="M152 64.1L168.5 63.5L169.1 41H180.9C196.5 41 197 41.4 198 53.1C198.3 57.8 199 62.2 199.4 62.8C199.9 63.6 203.1 64 208.7 64C217.1 64 217.2 64 216.6 61.8C216.2 60.5 215.5 55.7 215 51C214 40.8 213 37.9 209.5 35.2C207.1 33.3 207 33.1 208.9 32.5C214.5 30.8 218 21.5 216 14C214.8 9.4 209.5 4.5 204.3 3.1C202.1 2.5 190.1 2 176.3 2H152V64.1ZM196.5 16.5C199.5 19.5 199.7 22.9 196.9 26.4C194.9 29 194.7 29 181.9 29H169V14H181.5C193.5 14 194.2 14.1 196.5 16.5Z" fill="#ffffff"></path>
+        <path d="M225.2 32.7L225.5 63.5L241 64.1V43C241 30.5 241.4 22 241.9 22.2C242.4 22.3 250.1 31.8 259 43.3L275.2 64H293V2H277L276.8 23.2L276.5 44.5L260.5 23.2L244.5 2H225L225.2 32.7Z" fill="#ffffff"></path>
+        <path d="M315 25.2C309.4 38 303.3 51.8 301.4 55.8C298.9 61.2 298.4 63.2 299.4 63.6C300.1 63.9 304.2 64 308.5 63.8L316.2 63.5L318.5 57.5L320.7 51.5L335.1 51.2L349.5 51L352 57.2L354.5 63.5L363.3 63.8C368.1 63.9 372 63.7 372 63.3C372 62.9 366 49 358.7 32.5L345.5 2.49999L325.3 1.89999L315 25.2ZM340.8 29.2L344.8 39H335.4C330.2 39 326 38.9 326 38.7C326 38.5 327.6 34.4 329.6 29.4C331.6 24.5 333.7 19.4 334.2 18C335.2 15.6 335.2 15.6 336 17.5C336.5 18.6 338.6 23.9 340.8 29.2Z" fill="#ffffff"></path>
+        <path d="M377 64.1L392.5 63.5L393.5 21.5L410 42.8L426.5 64L435.3 63.8C440.1 63.6 444 63.2 444 62.7C444 62.3 444 48.5 444 32V2H428L427.8 23L427.5 44L395.9 2H377V64.1Z" fill="#ffffff"></path>
+      </svg> `
+
+      const svgUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
+      const logos = [
+        { src: '/images/logo-hello.png', alt: 'Logo 1' },
+        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2' },
+        { src: '/images/logo-naturalbot.png', alt: 'Logo 3' },
+      { src: svgUrl, alt: 'Marca em SVG' },
+        { src: '/images/logo-hello.png', alt: 'Logo 1' },
+        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2' },
+        { src: '/images/logo-naturalbot.png', alt: 'Logo 3' },
+      { src: svgUrl, alt: 'Marca em SVG' },
+        
+      ]
+
+const logosInfinite = computed(() => [...logos, ...logos, ...logos])
+
 </script>
 
 
@@ -504,6 +578,10 @@ useHead({
 
 .hero-auto {
   min-height: auto;
+}
+
+#logosSlider .swiper-wrapper { 
+  transition-timing-function: linear !important;
 }
 
 /* Desktop (≥768px): ocupa a tela inteira */
