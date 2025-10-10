@@ -95,41 +95,47 @@
         
       </div>
 
-<div
-  id="logosSlider"
-  class="relative mt-14 md:mt-[200px] border-y border-[rgba(242,234,220,0.28)] "
->
+<div id="logosSlider" class="relative mt-14 md:mt-[200px] border-y border-[rgba(242,234,220,0.32)]">
   <ClientOnly>
-
-    <div class="relative mx-auto w-full  px-4 py-6">
-
-      <div
-        class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-80 z-50
-               bg-gradient-to-r from-[rgba(13,13,14,0.9)] to-transparent"
-      ></div>
-      <div
-        class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-80 z-50
-               bg-gradient-to-l from-[rgba(13,13,14,0.9)] to-transparent"
-      ></div>
+    <!-- wrapper central da faixa -->
+    <div class="relative mx-auto w-full  px-6 py-6 overflow-hidden">
+      <!-- fades laterais alinhadas à faixa -->
+      <div class="pointer-events-none absolute inset-y-0 left-0 w-24 md:w-32 z-10
+                  bg-gradient-to-r from-[rgba(13,13,14,0.96)] to-transparent"></div>
+      <div class="pointer-events-none absolute inset-y-0 right-0 w-24 md:w-32 z-10
+                  bg-gradient-to-l from-[rgba(13,13,14,0.96)] to-transparent"></div>
 
       <Swiper
         :modules="[Autoplay, FreeMode]"
         :loop="true"
+        :loopAdditionalSlides="8"
+        :watchSlidesProgress="true"
         :speed="9000"
         :autoplay="{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false }"
         :freeMode="true"
         :freeModeMomentum="false"
         :slides-per-view="'auto'"
-        :space-between="100"
+        :space-between="64"
         :allowTouchMove="false"
         class="py-2 max-w-[1536px]"
       >
         <SwiperSlide v-for="(logo, i) in logosInfinite" :key="i" class="!w-auto">
-          <img
-            :src="logo.src"
-            :alt="logo.alt"
-            class="h-10 md:h-12 opacity-80 hover:opacity-100 transition-opacity"
-          />
+          <!-- CHIP com contraste -->
+          <div
+            class="rounded-xl px-6 py-3 md:px-7 md:py-3.5
+                   
+                   
+                   inline-flex items-center justify-center"
+          >
+            <img
+              :src="logo.src"
+              :alt="logo.alt"
+              class="h-8 md:h-10 object-contain
+                     drop-shadow-[0_1px_6px_rgba(0,0,0,0.6)]
+                     brightness-125 contrast-110"
+              :class="logo.forceWhite ? 'force-white' : ''"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
@@ -546,13 +552,13 @@ const svg = `<svg width="118" class="h-alto" viewBox="0 0 444 65" fill="none" xm
 
       const svgUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
       const logos = [
-        { src: '/images/logo-hello.png', alt: 'Logo 1' },
-        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2' },
-        { src: '/images/logo-naturalbot.png', alt: 'Logo 3' },
+        { src: '/images/logo-hello.png', alt: 'Logo 1', forceWhite: true },
+        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2', forceWhite: true },
+        { src: '/images/logo-naturalbot.png', alt: 'Logo 3', forceWhite: true },
       { src: svgUrl, alt: 'Marca em SVG' },
-        { src: '/images/logo-hello.png', alt: 'Logo 1' },
-        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2' },
-        { src: '/images/logo-naturalbot.png', alt: 'Logo 3' },
+        { src: '/images/logo-hello.png', alt: 'Logo 1', forceWhite: true },
+        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2', forceWhite: true },
+        { src: '/images/logo-naturalbot.png', alt: 'Logo 3',forceWhite: true },
       { src: svgUrl, alt: 'Marca em SVG' },
         
       ]
@@ -582,6 +588,15 @@ const logosInfinite = computed(() => [...logos, ...logos, ...logos])
 
 #logosSlider .swiper-wrapper { 
   transition-timing-function: linear !important;
+}
+
+#logosSlider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* fallback pra logos muito escuras/azul-marinho etc. */
+.force-white {
+  filter: grayscale(1) brightness(200%) invert(1) contrast(0.9);
 }
 
 /* Desktop (≥768px): ocupa a tela inteira */
