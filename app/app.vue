@@ -42,7 +42,6 @@
   @click="closeMenu"
 ></div>
 
-<!-- MENU MOBILE (off-canvas à direita) -->
 <aside
   id="mobileMenu"
   class="fixed right-0 top-0 h-full w-80 max-w-[85vw] transition-transform duration-200 z-50
@@ -319,7 +318,6 @@
         </ul>
       </aside>
 
-      <!-- Centro: Foto + Depoimento (texto mais largo) -->
       <div class="flex flex-col md:flex-row gap-6 items-stretch">
         <!-- Foto fixa -->
         <figure class="rounded-xl overflow-hidden md:basis-[320px] md:shrink-0">
@@ -330,7 +328,6 @@
           />
         </figure>
 
-        <!-- Texto ocupa o restante -->
         <article
           class=" rounded-xl bg-[rgba(13,13,14,1)] border border-[rgba(242,234,220,0.1)]
                  shadow-[inset_1px_1px_0_0_rgba(16,14,19,0.4)] p-6 md:p-8"
@@ -507,7 +504,7 @@ const handleKeydown = (e: KeyboardEvent) => { if (e.key === 'Escape') closeMenu(
 onMounted(() => document.addEventListener('keydown', handleKeydown))
 onBeforeUnmount(() => document.removeEventListener('keydown', handleKeydown))
 
-/** ====== SEU CÓDIGO EXISTENTE ====== **/
+
 const activeId = ref<number>(1)
 
 type Person = {
@@ -552,12 +549,12 @@ const svg = `<svg width="118" class="h-alto" viewBox="0 0 444 65" fill="none" xm
 
       const svgUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`
       const logos = [
-        { src: '/images/logo-hello.png', alt: 'Logo 1', forceWhite: true },
-        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2', forceWhite: true },
+        { src: '/images/hello-sales-logo.svg', alt: 'Logo 1', forceWhite: true },
+        { src: '/images/logo-branco.png', alt: 'Logo 2' },
         { src: '/images/logo-naturalbot.png', alt: 'Logo 3', forceWhite: true },
       { src: svgUrl, alt: 'Marca em SVG' },
         { src: '/images/logo-hello.png', alt: 'Logo 1', forceWhite: true },
-        { src: '/images/Logo-Colorido-1.png', alt: 'Logo 2', forceWhite: true },
+        { src: '/images/logo-branco.png', alt: 'Logo 2' },
         { src: '/images/logo-naturalbot.png', alt: 'Logo 3',forceWhite: true },
       { src: svgUrl, alt: 'Marca em SVG' },
         
@@ -594,17 +591,17 @@ const logosInfinite = computed(() => [...logos, ...logos, ...logos])
   transition-timing-function: linear !important;
 }
 
-/* fallback pra logos muito escuras/azul-marinho etc. */
+
 .force-white {
   filter: grayscale(1) brightness(200%) invert(1) contrast(0.9);
 }
 
-/* Desktop (≥768px): ocupa a tela inteira */
+
 @media (min-width: 768px) {
-  /* fallback clássico */
+
   .hero-auto { min-height: 100vh; }
 
-  /* se o navegador suportar, usa a unidade “segura” (melhor p/ barras do mobile) */
+
   @supports (min-height: 100svh) {
     .hero-auto { min-height: 100svh; }
   }

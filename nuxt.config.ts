@@ -9,10 +9,8 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts'],
 
-  // ✅ CSS usando alias padrão
   css: ['~/assets/main.css', '~/assets/css/tailwind.css'],
 
-  // ✅ Corrige o alias dinamicamente
   vite: {
     resolve: {
       alias: {
