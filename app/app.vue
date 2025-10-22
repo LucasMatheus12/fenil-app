@@ -187,7 +187,7 @@
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
+          <div class="relative  rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)]  transition-colors h-[354px]">
             <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Automações Comerciais</h3>
             <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
               Automatize tarefas repetitivas e foque no que mais importa: vender.
@@ -195,7 +195,7 @@
             <!-- <div class="w-full h-32 bg-gray-800 rounded mb-4 flex items-center justify-center">
               <span class="text-gray-500">Interface Preview</span>
             </div> -->
-            <img src="/images/imgCard1.png" alt="" class="absolute bottom-10 right-0 w-full z-10 max-h-[178px] object-cover">
+            <img src="/images/imgCard1.svg" alt="" class="absolute bottom-10 right-0 w-full z-10 max-h-[178px] object-cover">
             <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover">
           </div>
           
