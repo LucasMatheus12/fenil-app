@@ -195,7 +195,7 @@
             <!-- <div class="w-full h-32 bg-gray-800 rounded mb-4 flex items-center justify-center">
               <span class="text-gray-500">Interface Preview</span>
             </div> -->
-            <img src="/images/testecard.svg" alt="" class="absolute bottom-10 right-0 w-full z-10 max-h-[178px] object-cover">
+            <img src="/images/testeCard2.svg" alt="" class="absolute bottom-10 right-0 w-full z-10 max-h-[178px] object-cover">
             <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover">
           </div>
           
