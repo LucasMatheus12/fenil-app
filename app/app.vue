@@ -156,117 +156,138 @@
         </div>
     </section>
 
-     <section id="como-funciona" class="py-16 px-4 relative overflow-hidden">
-      <div class="container mx-auto max-w-6xl">
-        <div class="grid grid-cols-1 md:grid md:grid-cols-2 items-center justify-between mb-12 gap-4">
-          <div class="flex flex-col">
-            <span class="block h-1.5 w-10 bg-[rgba(26,255,122,1)] mb-6"></span>
-            <h2 class="lora md:text-[72px] text-[40px] font-medium text-[rgba(242,234,220,1)]">Serviços</h2>
-          </div>
-          <div class="relative flex items-start">
-          <!-- Ornamento verde -->
-          <svg xmlns="http://www.w3.org/2000/svg"
-              class="absolute left-0 top-0 md:block hidden"
-              width="800" height="72" viewBox="0 0 851 72" fill="none">
-            <path d="M5.66668 3C5.66668 1.52723 4.47277 0.333334 2.99999 0.333334C1.52728 0.333334 0.333368 1.52724 0.333368 3C0.333368 4.47275 1.52728 5.66666 2.99999 5.66666C4.47277 5.66666 5.66668 4.47275 5.66668 3ZM851 71L851 70.5L35 70.5001L35 71.0001L35 71.5001L851 71.5L851 71ZM3 39.0001L3.5 39.0001L3.49999 3L2.99999 3L2.49999 3L2.5 39.0001L3 39.0001ZM35 71.0001L35 70.5001C17.603 70.5001 3.5 56.397 3.5 39.0001L3 39.0001L2.5 39.0001C2.5 56.9493 17.0507 71.5001 35 71.5001L35 71.0001Z"
-                  fill="url(#paint0_linear_1_2419)"/>
-            <defs>
-              <linearGradient id="paint0_linear_1_2419" x1="3" y1="37" x2="851" y2="37" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#1AFF7A" stop-opacity="0.5"/>
-                <stop offset="1" stop-color="#1AFF7A" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-          </svg>
+    <section id="como-funciona" class="py-16 px-4 relative overflow-hidden">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid grid-cols-1 md:grid md:grid-cols-2 items-center justify-between mb-12 gap-4">
+      <div class="flex flex-col">
+        <span class="block h-1.5 w-10 bg-[rgba(26,255,122,1)] mb-6"></span>
+        <h2 class="lora md:text-[72px] text-[40px] font-medium text-[rgba(242,234,220,1)]">Serviços</h2>
+      </div>
+      <div class="relative flex items-start">
+        <!-- Ornamento verde -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="absolute left-0 top-0 md:block hidden"
+             width="800" height="72" viewBox="0 0 851 72" fill="none">
+          <path d="M5.66668 3C5.66668 1.52723 4.47277 0.333334 2.99999 0.333334C1.52728 0.333334 0.333368 1.52724 0.333368 3C0.333368 4.47275 1.52728 5.66666 2.99999 5.66666C4.47277 5.66666 5.66668 4.47275 5.66668 3ZM851 71L851 70.5L35 70.5001L35 71.0001L35 71.5001L851 71.5L851 71ZM3 39.0001L3.5 39.0001L3.49999 3L2.99999 3L2.49999 3L2.5 39.0001L3 39.0001ZM35 71.0001L35 70.5001C17.603 70.5001 3.5 56.397 3.5 39.0001L3 39.0001L2.5 39.0001C2.5 56.9493 17.0507 71.5001 35 71.5001L35 71.0001Z"
+                fill="url(#paint0_linear_1_2419)"/>
+          <defs>
+            <linearGradient id="paint0_linear_1_2419" x1="3" y1="37" x2="851" y2="37" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1AFF7A" stop-opacity="0.5"/>
+              <stop offset="1" stop-color="#1AFF7A" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
 
-          <!-- Texto -->
-          <p class="relative inter font-normal text-[rgba(242,234,220,1)] md:text-[18px] text-[16px] leading-relaxed md:max-w-[29rem] max-w-full md:ml-8 ml-0">
-            Projetamos e construímos sua máquina de vendas com a mais avançada tecnologia em automação e IA.
-          </p>
+        <!-- Texto -->
+        <p class="relative inter font-normal text-[rgba(242,234,220,1)] md:text-[18px] text-[16px] leading-relaxed md:max-w-[29rem] max-w-full md:ml-8 ml-0">
+          Projetamos e construímos sua máquina de vendas com a mais avançada tecnologia em automação e IA.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Automações Comerciais</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Automatize tarefas repetitivas e foque no que mais importa: vender.
+        </p>
+        <!-- Arte -->
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard1.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        </div>
+        <!-- Máscara -->
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
       </div>
 
+      <!-- Card 2 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">SDR AI</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Prospecção e qualificação de leads no piloto automático com IA.
+        </p>
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard2.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
         </div>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Automações Comerciais</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Automatize tarefas repetitivas e foque no que mais importa: vender.
-            </p>
-            <!-- <div class="w-full h-32 bg-gray-800 rounded mb-4 flex items-center justify-center">
-              <span class="text-gray-500">Interface Preview</span>
-            </div> -->
-            <img src="/images/imgCard1.svg" alt="" class="absolute bottom-10 right-0 w-full z-10 max-h-[178px] object-cover">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover">
-          </div>
-          
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">SDR AI</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Prospecção e qualificação de leads no piloto automático com IA.
-            </p>
-            <img src="/images/imgCard2.svg" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[237px] h-[139.7px] object-cover  z-10">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover">
-          </div>
-          
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">CRM</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Transforme seu CRM no cérebro inteligente da sua máquina de vendas.
-            </p>
-            <img src="/images/imgCard3.svg" alt="" class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 h-[163px] object-cover w-[239px]">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full object-cover h-[178px]">
-          </div>
-          
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Estrutura de Funil</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Projetamos e construímos sua máquina de vendas com a mais avançada tecnologia em automação e IA.
-            </p>
-            <img src="/images/imgCard4.svg" alt="" class="absolute bottom-5 left-1/2 object-cover -translate-x-1/2 z-10 h-[159px] w-[239px]">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 object-cover w-full h-[178px]">
-          </div>
-          
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Ferramentas de IA</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Otimize suas campanhas e vendas com o poder da Inteligência Artificial.
-            </p>
-            <img src="/images/imgCard5.svg" alt="" class="absolute bottom-5 left-1/2 object-cover -translate-x-1/2 z-10 h-[164px] w-full">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 object-cover w-full h-[178px]">
-          </div>
-          
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Outbound</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Conectamos sua empresa diretamente aos seus clientes ideais.
-            </p>
-            <img src="/images/imgCard6.svg" alt="" class="absolute bottom-1 left-1/2 object-cover -translate-x-1/2 z-10 h-[167px] w-[230px]">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 object-cover w-full h-[178px]">
-          </div>
-        
-          <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px]">
-            <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Inbound</h3>
-            <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
-              Nosso agente identifica a campanha e faz o atendimento personalizado para o lead
-            </p>
-            <img src="/images/imgCard7.svg" alt="" class="absolute bottom-0 object-cover right-0 w-full z-10">
-            <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 object-cover right-0 w-full h-[178px]">
-          </div>
-          
-          <div class="relative text-black rounded-lg p-6 bg-[rgba(242,234,220,1)] h-[354px]">
-            <h3 class="text-lg font-semibold mb-2">Pronto para construir o seu funil?</h3>
-            <p class="text-gray-600 text-sm mb-4">
-              Cada empresa é única. O próximo passo é entendermos seus desafios para desenhar uma máquina de vendas sob medida para o seu negócio.
-            </p>
-            <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
-              FAZER DIAGNÓSTICO ->
-            </button>
-            <img src="/images/circles.png" alt="" class="absolute bottom-0 right-0">
-          </div>
-        </div>
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
       </div>
-      <img src="/images/maskServicos.png" alt="" class="absolute bottom-0 right-0 w-full -z-[10]">
-    </section>
+
+      <!-- Card 3 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">CRM</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Transforme seu CRM no cérebro inteligente da sua máquina de vendas.
+        </p>
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard3.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        </div>
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+      </div>
+
+      <!-- Card 4 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Estrutura de Funil</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Projetamos e construímos sua máquina de vendas com a mais avançada tecnologia em automação e IA.
+        </p>
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard4.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        </div>
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+      </div>
+
+      <!-- Card 5 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Ferramentas de IA</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Otimize suas campanhas e vendas com o poder da Inteligência Artificial.
+        </p>
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard5.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        </div>
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+      </div>
+
+      <!-- Card 6 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Outbound</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Conectamos sua empresa diretamente aos seus clientes ideais.
+        </p>
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard6.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        </div>
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+      </div>
+
+      <!-- Card 7 -->
+      <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
+        <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Inbound</h3>
+        <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
+          Nosso agente identifica a campanha e faz o atendimento personalizado para o lead
+        </p>
+        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
+          <img src="/images/imgCard7.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        </div>
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+      </div>
+
+      <!-- Card CTA -->
+      <div class="relative text-black rounded-lg p-6 bg-[rgba(242,234,220,1)] h-[354px]">
+        <h3 class="text-lg font-semibold mb-2">Pronto para construir o seu funil?</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Cada empresa é única. O próximo passo é entendermos seus desafios para desenhar uma máquina de vendas sob medida para o seu negócio.
+        </p>
+        <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+          FAZER DIAGNÓSTICO ->
+        </button>
+        <img src="/images/circles.png" alt="" class="absolute bottom-0 right-0">
+      </div>
+    </div>
+  </div>
+  <img src="/images/maskServicos.png" alt="" class="absolute bottom-0 right-0 w-full -z-[10]">
+</section>
+
 
     <section id="depoimentos" class="md:h-sreen h-auto relative py-20 px-4
          border-y border-[rgba(242,234,220,0.1)]">
