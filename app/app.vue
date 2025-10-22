@@ -156,7 +156,7 @@
         </div>
     </section>
 
-    <section id="como-funciona" class="py-16 px-4 relative overflow-hidden">
+     <section id="como-funciona" class="py-16 px-4 relative overflow-hidden">
   <div class="container mx-auto max-w-6xl">
     <div class="grid grid-cols-1 md:grid md:grid-cols-2 items-center justify-between mb-12 gap-4">
       <div class="flex flex-col">
@@ -186,93 +186,99 @@
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <!-- Card 1 -->
+      <!-- 1 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Automações Comerciais</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Automatize tarefas repetitivas e foque no que mais importa: vender.
         </p>
-        <!-- Arte -->
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard1.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <!-- arte como background, mantendo w/h/posições -->
+        <div
+          class="absolute bottom-10 right-0 w-full max-h-[178px] h-[178px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard1.svg');">
         </div>
-        <!-- Máscara -->
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card 2 -->
+      <!-- 2 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">SDR AI</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Prospecção e qualificação de leads no piloto automático com IA.
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard2.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <div
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[237px] h-[139.7px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard2.svg');">
         </div>
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card 3 -->
+      <!-- 3 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">CRM</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Transforme seu CRM no cérebro inteligente da sua máquina de vendas.
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard3.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <div
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[239px] h-[163px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard3.svg');">
         </div>
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card 4 -->
+      <!-- 4 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Estrutura de Funil</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Projetamos e construímos sua máquina de vendas com a mais avançada tecnologia em automação e IA.
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard4.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <div
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-[239px] h-[159px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard4.svg');">
         </div>
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card 5 -->
+      <!-- 5 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Ferramentas de IA</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Otimize suas campanhas e vendas com o poder da Inteligência Artificial.
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard5.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <div
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 w-full h-[164px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard5.svg');">
         </div>
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card 6 -->
+      <!-- 6 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Outbound</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Conectamos sua empresa diretamente aos seus clientes ideais.
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard6.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <div
+          class="absolute bottom-1 left-1/2 -translate-x-1/2 w-[230px] h-[167px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard6.svg');">
         </div>
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card 7 -->
+      <!-- 7 -->
       <div class="relative bg-[rgba(13,13,14,1)] rounded-lg border-[1.5px] pt-[32px] px-[24px] border-[rgba(221,221,221,0.05)] shadow-[inset_1px_1px_0_0_rgba(16,14,19,1)] transition-colors h-[354px] overflow-hidden">
         <h3 class="inter text-[18px] font-bold text-[rgba(242,234,220,1)] mb-2">Inbound</h3>
         <p class="inter font-normal text-[14px] text-[rgba(218,214,207,1)] mb-4">
           Nosso agente identifica a campanha e faz o atendimento personalizado para o lead
         </p>
-        <div class="absolute inset-x-0 bottom-0 h-[180px] md:h-[178px] flex items-end justify-center z-20 overflow-hidden">
-          <img src="/images/imgCard7.svg" alt="" class="max-h-full w-auto object-contain pointer-events-none select-none">
+        <div
+          class="absolute bottom-0 right-0 w-full h-[178px] z-20 bg-center bg-no-repeat bg-cover"
+          style="background-image:url('/images/imgCard7.svg');">
         </div>
-        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] z-10 pointer-events-none select-none">
+        <img src="/images/maskCard.svg" alt="" class="absolute bottom-0 right-0 w-full h-[178px] object-cover z-10">
       </div>
 
-      <!-- Card CTA -->
+      <!-- CTA -->
       <div class="relative text-black rounded-lg p-6 bg-[rgba(242,234,220,1)] h-[354px]">
         <h3 class="text-lg font-semibold mb-2">Pronto para construir o seu funil?</h3>
         <p class="text-gray-600 text-sm mb-4">
