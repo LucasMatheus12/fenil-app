@@ -13,8 +13,8 @@
     </nav>
 
     <!-- CTA DESKTOP -->
-    <a href="#contato" class="hidden md:block bg-transparent border border-gray-600 text-white px-6 py-2 rounded-full hover:border-green-500 transition-colors">
-      FALE CONOSCO
+    <a href="#fenil-existe" class="hidden md:block bg-transparent border border-gray-600 text-white px-6 py-2 rounded-full hover:border-green-500 transition-colors uppercase">
+      Nosso propósito
     </a>
 
     <!-- HAMBURGUER (MOBILE) -->
@@ -65,11 +65,11 @@
   </nav>
 
   <div class="px-4 pt-2 pb-6 border-t border-white/10">
-    <a href="#contato"
+    <a href="#fenil-existe"
        class="block w-full text-center bg-transparent border border-gray-600 text-white px-4 py-3 rounded-full
-              hover:border-green-500 transition-colors"
+              hover:border-green-500 transition-colors uppercase"
        @click="closeMenu">
-      FALE CONOSCO
+      Nosso propósito
     </a>
   </div>
 </aside>
@@ -87,9 +87,9 @@
           Previsibilidade de leads, agenda e receita. Sem depender de sorte.
         </p>
         
-        <button class="bg-[rgba(242,234,220,1)] text-black px-8 py-3 rounded-full uppercase text-[14px] font-semibold hover:bg-gray-100 transition-colors mb-16">
+        <a href="#contato" class="bg-[rgba(242,234,220,1)] text-black px-8 py-3 rounded-full uppercase text-[14px] font-semibold hover:bg-gray-100 transition-colors mb-16">
           Ver como funciona ->
-        </button>
+        </a>
       
         
       </div>
@@ -135,7 +135,7 @@
 
 
     </section>
-    <section class="py-16 px-4 ">
+    <section id="fenil-existe" class="py-16 px-4 ">
     
         <div class=" gap-12 items-center">
           
@@ -258,10 +258,10 @@
             <p class="text-gray-600 text-sm mb-4">
               Cada empresa é única. O próximo passo é entendermos seus desafios para desenhar uma máquina de vendas sob medida para o seu negócio.
             </p>
-            <button class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+            <a href="#contato" class="absolute z-10 bg-black cursor-pointer text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
               FAZER DIAGNÓSTICO ->
-            </button>
-            <img src="/images/circles.png" alt="" class="absolute bottom-0 right-0">
+            </a>
+            <img src="/images/circles.png" alt="" class="absolute bottom-0 right-0 ">
           </div>
         </div>
       </div>
@@ -362,7 +362,7 @@
             <div class=" mb-[24px] flex justify-center">
               <span class="h-1.5 w-10 bg-[rgba(26,255,122,1)]"></span>
             </div>
-            <h2 class="text-[32px] md:[40px] md:font-medium font-normal text-center text-rgba(242,234,220,1) mb-[56px]">Seu diagnóstico aqui!</h2>
+            <h2 class="font-['Lora'] text-[28px] md:text-[48px] mt-6 !text-[#F2EADC] font-bold leading-[1.2] mb-[56px]">Seu diagnóstico aqui!</h2>
 
             <!-- formulário -->
             <form class="space-y-5" @submit.prevent="submitForm">
